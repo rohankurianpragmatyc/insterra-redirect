@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    window.onload = function() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.example.app";
+      } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/us/app/example-app/id123456789";
+      } else {
+        window.location.href = "https://example.com"; // Optional fallback page
+      }
+    };
+  </script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
